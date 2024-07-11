@@ -12,10 +12,13 @@
 <body>
     <div id="container">
         <h1>Wikipedia Page<br>Word Counter</h1>
-        <form action="" id="wikipedia-url">
-            <input type="text", id="url", name="url" placeholder="Enter Wikipedia URL...">
+        <form id="word-count">
+            <input type="text", id="wikipedia-url", name="url" placeholder="Enter Wikipedia URL...">
+            <button type="submit" id="get-word-count">Get word count</button>
         </form>
-        <button type="submit" form="wikipedia-url" id="submit">Get word count</button>
+    </div>
+    <div id="word-count-display">
+        <h1><span id="number-of-words"></span>words.</h1>
     </div>
     
 </body>

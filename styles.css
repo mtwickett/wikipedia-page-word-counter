@@ -26,7 +26,7 @@ form {
     text-align: center;
 }
 
-form #url {
+form #wikipedia-url {
     margin: 1em auto 2em auto;
     outline: none;
     border: none;
@@ -40,12 +40,12 @@ form #url {
     font-size: 18px;
 }
 
-form #url:focus {
+form #wikipedia-url:focus {
     box-shadow: 1px 1px 1px rgba(62, 58, 58, 0.4);
     border: 1px ridge #A1D6E2;
 }
 
-div button#submit {
+div button#get-word-count {
     margin: 2em auto 0 auto;
     padding: 1em;
     background: linear-gradient(90deg, #A1D6E2, #1995AD);
@@ -60,6 +60,7 @@ div button#submit {
     font-size: 1em;
 }
 
-div button#submit:hover {
+div button#get-word-count:hover {
     transform: scale(1.2);
+     cursor: pointer;
 }
