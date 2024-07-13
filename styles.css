@@ -65,9 +65,9 @@ div button#get-word-count:hover {
      cursor: pointer;
 }
 
-/* .hidden {
+.hidden {
     display: none;
-} */
+}
 
 h2 {
     /* margin: auto;
