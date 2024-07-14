@@ -20,6 +20,10 @@ export const getParagraphTags = (htmlString) => {
     return text; 
 };
 
+export const removeUnderscores = (title) => {
+    return title.replace(/_/g, ' ');
+};
+
 export const countWords = (text) => {
     return text.split(/\s+/).filter(word => word).length;
 };

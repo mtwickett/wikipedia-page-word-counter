@@ -5,10 +5,7 @@ body {
 div#container {
     margin: auto;
     padding: 2em;
-    border-radius: 0.25em;
-    display: flex;
-    flex-direction: column;
-    width: 50em;
+    width: 45em;
     text-align: center;
 }
 
@@ -20,10 +17,6 @@ h1 {
     font-weight: 700;
     font-size: 3.5em;
     color: #1995AD;
-}
-
-form {
-    text-align: center;
 }
 
 form #wikipedia-url {
@@ -62,26 +55,25 @@ div button#get-word-count {
 
 div button#get-word-count:hover {
     transform: scale(1.1);
-     cursor: pointer;
+    cursor: pointer;
 }
 
-.hidden {
+div.hidden {
     display: none;
 }
 
 h2 {
-    /* margin: auto;
-    padding: 0.5em 1em;
-    width: fit-content;
-    border-style: ridge;
-    box-shadow: 1px 1px 1px rgba(62, 58, 58, 0.4);
-    background-color: white; */
     text-align: center;
+    overflow-wrap: normal;
     color: #1995AD;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
     font-size: 2em;
+}
+
+#number-of-words {
+    font-weight: 900;
 }
 
