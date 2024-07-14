@@ -9,7 +9,7 @@ export const getWikipediaTitle = (url) => {
     return urlMatch ? urlMatch[1] : '';
 };
 
-export const getParagraphTags = (htmlString) => {
+export const getPTagText = (htmlString) => {
     const parser = new DOMParser();
     const doc = parser.parseFromString(htmlString, 'text/html');
     const paragraphs = doc.querySelectorAll('p');
