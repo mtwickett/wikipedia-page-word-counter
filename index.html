@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Word Counter</title>
+    <title>Wikipedia Page Word Counter</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -12,11 +13,14 @@
 <body>
     <div id="container">
         <h1>Wikipedia Page<br>Word Counter</h1>
-        <form action="" id="wikipedia-url">
-            <input type="text", id="url", name="url" placeholder="Enter Wikipedia URL...">
+        <form id="word-count-form">
+            <input type="text", id="wikipedia-url", name="Wikipedia-url" placeholder="Enter Wikipedia URL...">
+            <button type="submit" id="get-word-count">Get word count</button>
         </form>
-        <button type="submit" form="wikipedia-url" id="submit">Get word count</button>
     </div>
-    
+    <div id="word-count-display" class="hidden">
+        <h2>The <span id="title"></span> page has <span id="number-of-words"></span> words.</h2>
+    </div>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
