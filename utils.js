@@ -1,10 +1,10 @@
 export const isWikipediaUrl = (url) => {
-    const regex = /^https:\/\/en.wikipedia.org\/wiki\/.+/;
+    const regex = /^https:\/\/.+wikipedia.org\/wiki\/.+/;
     return regex.test(url);
 };
 
 export const getWikipediaTitle = (url) => {
-    const regex = /https:\/\/en.wikipedia.org\/wiki\/(.+)/;
+    const regex = /https:\/\/.+wikipedia.org\/wiki\/(.+)/;
     const urlMatch = url.match(regex);
     return urlMatch ? urlMatch[1] : '';
 };
