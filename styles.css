@@ -78,8 +78,8 @@ h2 {
     font-weight: 900;
 }
 
-@media (max-width: 768px) {
-    form#word-count-form {
+@media screen and (max-width: 768px) {
+    form #word-count-form {
         display: inline-block;
     }
 
