@@ -78,25 +78,35 @@ h2 {
     font-weight: 900;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+    div#container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 1rem 0;
+        font-size: 2.5rem;
+    }
+
     form #word-count-form {
         display: inline-block;
     }
 
-    h1 {
-        font-size: 5rem;
-    }
-
     form #wikipedia-url {
-        width: 85%;
-        height: 5rem;
-        font-size: 2rem;
+        margin: 1rem 0rem 2rem 0;
+        width: 70%;
+        height: 3rem;
+        font-size: 1.2rem;
     }
 
     div button#get-word-count {
-        width: 50%;
-        height: 5rem;
-        font-size: 2rem;
+        width: 55%;
+        height: 5.5rem;
+        font-size: 1.5rem;
     }
 }
 
